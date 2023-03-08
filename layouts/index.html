@@ -30,7 +30,7 @@
 
                     <div class="row">
 
-                        <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+                        <div class="resume-main col-12 col-md-8 col-xl-9 pr-0 pr-lg-5">
 
                             {{ if .Site.Params.experience.enable }}
                             {{ partial "experience.html" . }}
@@ -40,6 +40,9 @@
                             {{ partial "projects.html" . }}
                             {{ end }}
 
+                            {{ if .Site.Params.recommendations.enable }}
+                            {{ partial "recommendations.html" . }}
+                            {{ end }}
                             {{ if .Site.Params.certifications.enable }}
                             {{ partial "certifications.html" . }}
                             {{ end }}
