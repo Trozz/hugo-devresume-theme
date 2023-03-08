@@ -1,3 +1,6 @@
+# Disable unused pages/routes
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 # Page settings
 
 baseURL = "http://example.org/"
